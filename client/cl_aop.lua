@@ -27,6 +27,15 @@ CONFIG = CONFIG or {}
 local AOP = CONFIG.DEFAULT
 local DRAW = {}
 
+-- Utility function to get table keys
+local function getKeys(tbl)
+    local keys = {}
+    for k in pairs(tbl) do
+        table.insert(keys, k)
+    end
+    return keys
+end
+
 -- Format timer text for screen.
 function formatTimerText(key, time)
     return (CONFIG.PRIORITY.STATUS[key][time] or CONFIG.PRIORITY.STATUS[key][2]):gsub("{x}", time)
