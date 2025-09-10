@@ -10,6 +10,11 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
+-- Metadata
+author 'JGN Network developer team'
+description 'Enhanced AOP and Priority Management script for JRP with optimized rendering and branding.'
+version '1.0.0'
+
 -- Shared scripts
 shared_scripts {
     'shared/sh_utility.lua',
@@ -26,7 +31,5 @@ server_scripts {
     'server/sv_aop.lua'
 }
 
--- Additional metadata for cooler presentation
-author 'JGN Network developer team'
-description 'Enhanced AOP and Priority Management script for JRP with optimized rendering and branding.'
-version '1.0.0'
+-- Additional optimizations: ensure scripts are loaded in order
+-- No dependencies required, uses native FiveM functions

@@ -4,7 +4,6 @@
 -- Description: Server core - AOP-JRP.
 -- Last Updated: 9/10/2025
 -- Last Edit By: JGN Network developer team
--- aSocket LLC
 -- Rebranded for AOP-JRP
 ---------------------------------------------
 
@@ -120,7 +119,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(60000)  -- Wait 1 minute
         AOP.COUNTY.TIME = math.max(0, AOP.COUNTY.TIME - 1)
-        AOP.CITY.TIME = math.max(0, AOP.COUNTY.TIME - 1)  -- Fixed: was AOP.CITY.TIME twice
+        AOP.CITY.TIME = math.max(0, AOP.CITY.TIME - 1)
         updateAOP()
     end
 end)

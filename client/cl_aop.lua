@@ -5,7 +5,6 @@
 
 -- Last Updated: 9/10/2025
 -- Last Edit By: JGN Network developer team
--- aSocket LLC
 ---------------------------------------------
 
 -- Localize native functions
@@ -122,14 +121,14 @@ TriggerServerEvent("aop:getAOP")
 
 -- /setpriority
 TriggerEvent('chat:addSuggestion', '/setpriority', 'Set a regions priority status.', {
-    { name="Region", help="Region Options: " .. table.concat(CONFIG.PRIORITY.STATUS, ', ') },
+    { name="Region", help="Region Options: " .. table.concat(CONFIG.PRIORITY.REGION, ', ') },
     { name="Status", help="Status Options: " .. table.concat(getKeys(CONFIG.PRIORITY.STATUS), ', ') },
     { name="Notes", help="This is optional!" },
 })
 
 -- /setp (shorthand for setpriority)
 TriggerEvent('chat:addSuggestion', '/setp', 'Set a regions priority status.', {
-   { name="Region", help="Region Options: " .. table.concat(CONFIG.PRIORITY.STATUS, ', ') },
+   { name="Region", help="Region Options: " .. table.concat(CONFIG.PRIORITY.REGION, ', ') },
    { name="Status", help="Status Options: " .. table.concat(getKeys(CONFIG.PRIORITY.STATUS), ', ') },
    { name="Notes", help="This is optional!" },
 })
