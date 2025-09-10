@@ -75,6 +75,20 @@ Edit `sh_config.lua` to customize:
 - Default values.
 - Debug mode.
 
+## Permissions
+
+The script uses FiveM's ACE permission system for commands when `CONFIG.DEBUG = false` (default). Commands are restricted and require appropriate permissions.
+
+### Setting Permissions
+Add the following to your `server.cfg`:
+- For a specific player: `add_ace identifier.steam:STEAMID command.aop allow`
+- For a group: `add_ace group.admin command.setpriority allow`
+- For all commands: `add_ace group.admin command.* allow`
+
+Replace `STEAMID` with the player's Steam ID and `group.admin` with your desired group. If `CONFIG.DEBUG = true`, no permissions are required.
+
+For more on ACE permissions, check the [FiveM Docs](https://docs.fivem.net/docs/server-manual/setting-up-a-server/#permissions).
+
 ## Dependencies
 
 - None (uses built-in FiveM natives).
