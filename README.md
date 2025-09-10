@@ -12,7 +12,7 @@
   <a href="https://discord.gg/JRP">💬 Join JGN Network Discord</a> | <a href="https://justicerp.xyz">🌐 Visit JGN Network</a>
 </div>
 
-## Features
+## ✨ Features
 
 - **Dynamic AOP Management**: Set and update the Area of Play in real-time.
 - **Priority System**: Manage priorities for regions (City, Blaine, Global) with statuses like Cooldown, Hold, In Progress, Pending, and Reset.
@@ -21,7 +21,7 @@
 - **Optimized Performance**: Localized functions, efficient string handling, and modern Lua 5.4 practices.
 - **Debug Mode**: Optional debug mode to remove permission requirements for testing.
 
-## Optimizations and Improvements
+## 🔄 Optimizations and Improvements
 
 ### Before
 - Basic AOP and priority management with simple text rendering.
@@ -41,7 +41,7 @@
 - Fixed bugs: Corrected timer decrementing, chat suggestion regions, and function call orders.
 - Added comprehensive README with installation, usage, and credits.
 
-## Installation
+## 📦 Installation
 
 1. Download or clone this repository into your FiveM resources folder.
 2. Ensure the resource is named `AOP-JRP`.
@@ -49,7 +49,7 @@
 4. Configure the webhook URL in `server/sv_aop.lua` if needed.
 5. Restart your server.
 
-## Usage
+## 🚀 Usage
 
 ### Commands
 - `/aop <area>`: Set the Area of Play (e.g., `/aop Blaine County`).
@@ -68,14 +68,14 @@
 - Pending
 - Reset
 
-## Configuration
+## ⚙️ Configuration
 
 Edit `sh_config.lua` to customize:
 - Regions and statuses.
 - Default values.
 - Debug mode.
 
-## Permissions
+## 🔐 Permissions
 
 The script uses FiveM's ACE permission system for commands when `CONFIG.DEBUG = false` (default). Commands are restricted and require appropriate permissions.
 
@@ -89,15 +89,15 @@ Replace `STEAMID` with the player's Steam ID and `group.admin` with your desired
 
 For more on ACE permissions, check the [FiveM Docs](https://docs.fivem.net/docs/server-manual/setting-up-a-server/#permissions).
 
-## Dependencies
+## 📋 Dependencies
 
 - None (uses built-in FiveM natives).
 
-## Credits
+## 🙏 Credits
 
 - Original script by aSocket LLC.
 - Rebranded and optimized by JGN Network developer team.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
