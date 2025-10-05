@@ -106,15 +106,19 @@ Citizen.CreateThread(function()
         else 
             _Wait(0)
         end
-        -- Render something
-        _DrawRect(0.424, 1.134, 0.5, 0.03, 0, 0, 0, 100)
-        RenderTextScreen(0.424, 1.134, 0.5, 0.55, 0.3, 'County Priority: ~g~' .. DRAW.COUNTY.NAME, 0, 255, 0)
-        -- Render something
-        _DrawRect(0.424, 1.153, 0.5, 0.03, 0, 0, 0, 100)
-        RenderTextScreen(0.424, 1.153, 0.5, 0.55, 0.3, 'City Priority: ~g~' .. DRAW.CITY.NAME, 0, 255, 0)
-        -- Render AOP
-        _DrawRect(0.424, 1.09, 0.5, 0.03, 0, 0, 0, 100)
-        RenderTextScreenAOP(0.424, 1.09, 0.5, 0.55, 0.8, '~b~AOP:~w~ ' .. AOP.AOP, 0, 0, 255)
+        
+        -- Render AOP (Main Header)
+        _DrawRect(0.424, 1.09, 0.5, 0.032, 15, 25, 35, 160)
+        RenderTextScreenAOP(0.424, 1.09, 0.5, 0.55, 0.75, '~c~AOP:~w~ ' .. AOP.AOP, 0, 255, 255)
+        
+        -- County Priority (slightly bigger)
+        _DrawRect(0.424, 1.134, 0.5, 0.035, 20, 20, 25, 160)
+        RenderTextScreen(0.424, 1.134, 0.5, 0.55, 0.35, '~o~County Priority: ~w~' .. DRAW.COUNTY.NAME, 255, 165, 0)
+        
+        -- City Priority (slightly bigger) - moved closer to County
+        _DrawRect(0.424, 1.158, 0.5, 0.035, 20, 20, 25, 160)
+        RenderTextScreen(0.424, 1.158, 0.5, 0.55, 0.35, '~p~City Priority: ~w~' .. DRAW.CITY.NAME, 200, 0, 255)
+        
         ::skip::
     end
 end)

@@ -44,7 +44,7 @@ CONFIG.DEFAULT = {
         ['STATUS'] = 'cooldown',
         ['TIME']   = 15
     },
-    ['AOP'] = '~g~Blaine County'
+    ['AOP'] = '~c~Blaine County'
 }
 
 -- Debug mode: removes permission requirements on commands
